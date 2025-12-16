@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  padding: 40px;
+  background: #000;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+#gallery img {
+  width: 250px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+a {
+  color: #1db954;
+  text-decoration: none;
+}
+
+footer {
+  padding: 20px;
+  background: #000;
+  font-size: 14px;
+}
