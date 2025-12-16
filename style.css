@@ -129,3 +129,55 @@ footer {
   text-decoration: none;
   color: inherit;
 }
+/* CAROUSEL WRAPPER */
+.carousel {
+  position: relative;
+  max-width: 800px;     /* Controls carousel width */
+  margin: 0 auto;       /* Centers it */
+  overflow: hidden;     /* Hides off-screen images */
+}
+
+/* IMAGE TRACK */
+.carousel-track {
+  display: flex;        /* Images sit in a row */
+  transition: transform 0.4s ease; /* Smooth slide */
+}
+
+/* EACH IMAGE */
+.carousel-track img {
+  width: 100%;          /* One image fills carousel */
+  flex-shrink: 0;       /* Prevents images from shrinking */
+  height: auto;
+  object-fit: contain;  /* Full image visible */
+  border-radius: 12px;
+}
+
+/* ARROW BUTTONS */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+
+  border-radius: 50%;
+}
+
+/* Position arrows */
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+/* Hover effect */
+.carousel-btn:hover {
+  background: rgba(29, 185, 84, 0.8);
+}
