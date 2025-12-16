@@ -105,12 +105,11 @@ footer {
   gap: 20px;
 }
 
-/* Images behave properly */
 .gallery-grid img {
   width: 100%;
-  height: 300px;       /* Forces uniform height */
-  object-fit: cover;  /* Crops instead of stretching */
+  height: auto;
+  max-height: 450px;
+  object-fit: contain;
   border-radius: 12px;
-  display: block;      /* Removes inline spacing issues */
+  display: block;
 }
-
