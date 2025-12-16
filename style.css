@@ -1,33 +1,82 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset default browser spacing */
+* {
   margin: 0;
-  background-color: #111;
-  color: #fff;
+  padding: 0;
+  box-sizing: border-box; /* Makes sizing more predictable */
+}
+
+/* Style the entire page */
+body {
+  /* Dark background = club vibe */
+  background: linear-gradient(
+    135deg,
+    #0f0f0f,
+    #1a1a1a,
+    #0a0a0a
+  );
+
+  /* Text color */
+  color: #ffffff;
+
+  /* Font style */
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* Center text by default */
   text-align: center;
 }
 
-header {
-  padding: 40px;
-  background: #000;
+/* HERO SECTION (top banner) */
+.hero {
+  /* Full screen height */
+  height: 100vh;
+
+  /* Center content vertically & horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Subtle glow effect */
+  background: radial-gradient(
+    circle at top,
+    rgba(29, 185, 84, 0.2),
+    transparent 60%
+  );
 }
 
-section {
-  padding: 40px 20px;
+/* DJ name */
+.hero h1 {
+  font-size: 4rem; /* Big headline */
+  letter-spacing: 4px; /* Spaced-out letters */
 }
 
-#gallery img {
-  width: 250px;
-  margin: 10px;
-  border-radius: 8px;
+/* Tagline */
+.hero p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #1db954; /* Neon green accent */
 }
 
-a {
-  color: #1db954;
-  text-decoration: none;
+/* ABOUT SECTION */
+.about {
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* Slight overlay */
 }
 
+.about h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6; /* Makes text easier to read */
+}
+
+/* FOOTER */
 footer {
   padding: 20px;
-  background: #000;
-  font-size: 14px;
+  font-size: 0.9rem;
+  color: #aaa;
 }
