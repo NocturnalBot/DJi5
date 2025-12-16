@@ -22,25 +22,32 @@
   </section>
 
   <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-container">
-      <div class="gallery-grid">
-        <a href="images/portrait1.jpg" target="_blank">
-          <img 
-            src="images/portrait1.jpg" 
-            alt="DJ performing"
-            loading="lazy"
-            >
-        <\a>
-        <a href="images/Workplace1.jpeg" target="_blank">
-          <img src="images/Workplace1.jpeg" 
-            alt="Crowd dancing"
-            loading="lazy"
-            >
-        <\a>
-      </div>
+  <h2>Gallery</h2>
+
+  <!-- Carousel container -->
+  <div class="carousel">
+
+    <!-- Left arrow -->
+    <button class="carousel-btn prev" aria-label="Previous image">
+      &#10094;
+    </button>
+
+    <!-- Image display area -->
+    <div class="carousel-track">
+      <!-- Each image is a slide -->
+      <img src="images/portrait1.jpg" alt="DJ performing" loading="lazy">
+      <img src="images/Workplace1.jpeg" alt="Crowd dancing" loading="lazy">
+      <img src="images/dj3.jpg" alt="Live crowd" loading="lazy">
     </div>
-  </section>
+
+    <!-- Right arrow -->
+    <button class="carousel-btn next" aria-label="Next image">
+      &#10095;
+    </button>
+
+  </div>
+</section>
+
 
   <section id="contact">
     <h2>Contact</h2>
