@@ -123,3 +123,9 @@ footer {
   transform: scale(1.03);
   box-shadow: 0 10px 30px rgba(29, 185, 84, 0.3);
 }
+
+.gallery-grid a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
