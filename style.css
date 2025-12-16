@@ -181,3 +181,10 @@ footer {
 .carousel-btn:hover {
   background: rgba(29, 185, 84, 0.8);
 }
+@media (max-width: 600px) {
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 8px 12px;
+  }
+}
+
